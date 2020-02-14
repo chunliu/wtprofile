@@ -8,6 +8,8 @@
         "defaults": {
             "fontFace": "Cascadia Code",
             "fontSize": 12,
+            "acrylicOpacity": 0.75,
+            "useAcrylic": true,
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageStretchMode": "none",
             "backgroundImageOpacity": 0.5
@@ -18,14 +20,16 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
-                "hidden": false
+                "hidden": false,
+                "backgroundImage": "<folder>\\bgimages\\Powershell.png" // Update the actual path
             },
             {
                 // Make changes here to the cmd.exe profile
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "name": "cmd",
                 "commandline": "cmd.exe",
-                "hidden": false
+                "hidden": false,
+                "backgroundImage": "<folder>\\bgimages\\cmd.png" // Update the actual path
             },
             {
                 "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
@@ -33,8 +37,6 @@
                 "name": "Ubuntu-18.04",
                 "source": "Windows.Terminal.Wsl",
                 "startingDirectory": "\\\\wsl$\\Ubuntu-18.04\\<home>", // Update home directory
-                "acrylicOpacity": 0.75,
-                "useAcrylic": true,
                 "backgroundImage": "<folder>\\bgimages\\ubuntu.png" // Update the actual path
             },
             {
@@ -43,6 +45,13 @@
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure",
                 "backgroundImage": "<folder>\\bgimages\\cloudshell.png" // Update the actual path
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore",
+                "backgroundImage": "<folder>\\bgimages\\PowerShell_Core_6.png" // Update the actual path
             }
         ],
         // Add custom color schemes to this array
