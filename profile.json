@@ -6,7 +6,7 @@
     "requestedTheme": "dark",
     "profiles": {
         "defaults": {
-            "fontFace": "Cascadia Code",
+            "fontFace": "Cascadia Code PL",
             "fontSize": 12,
             "acrylicOpacity": 0.75,
             "useAcrylic": true,
@@ -36,7 +36,10 @@
                 "hidden": false,
                 "name": "Ubuntu-18.04",
                 "source": "Windows.Terminal.Wsl",
+                "padding": "8, 5",
+                "background": "#481036",
                 "startingDirectory": "\\\\wsl$\\Ubuntu-18.04\\<home>", // Update home directory
+                "icon": "<folder>\\icons\\ubuntu-32.png", // Update the actual path
                 "backgroundImage": "<folder>\\bgimages\\ubuntu.png" // Update the actual path
             },
             {
@@ -51,6 +54,8 @@
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore",
+                "background": "#000000",
+                "useAcrylic": false,
                 "backgroundImage": "<folder>\\bgimages\\PowerShell_Core_6.png" // Update the actual path
             }
         ],
